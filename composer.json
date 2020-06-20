@@ -1,5 +1,5 @@
 {
-  "name": "igor-pochyly/module-soft-maintenance-mode",
+  "name": "ipsoftware/magento-2-soft-maintenance-mode",
   "description": "Soft maintenance mode for Magento 2",
   "type": "magento2-module",
   "version": "1.0.0",
