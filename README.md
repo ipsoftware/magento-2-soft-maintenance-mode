@@ -7,7 +7,7 @@ Sometimes you need to turn off your store. If the shop is completely turned off,
 Run the following command in Magento 2 root folder:
 
 ````
-composer require ipsoftware/module-soft-maintenance-mode
+composer require ipsoftware/magento-2-soft-maintenance-mode
 php bin/magento setup:upgrade
 ````
 
