@@ -1,0 +1,17 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="Ipsoftware_SoftMaintenanceMode::css/softmaintenance.css" />
+    </head>
+    <body>
+        <referenceContainer name="header.container">
+            <container name="header.softmaintenance" as="softmaintenance_containert" label="Maintenance mode"
+                       htmlTag="div" htmlClass="header-soft-maintenance-message" before="header.panel.wrapper"/>
+        </referenceContainer>
+        <referenceContainer name="header.softmaintenance">
+            <block class="Magento\Framework\View\Element\Template" name="header.softmaintenance.block"
+                   template="Ipsoftware_SoftMaintenanceMode::maintenancemsg.phtml"
+                   ifconfig="softmaintenance/general/enable"/>
+        </referenceContainer>
+    </body>
+</page>

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+
+    <type name="Magento\Catalog\Model\Product">
+        <plugin name="SoftMaintenanceMode_IsSalablePlugin::after"
+                type="Ipsoftware\SoftMaintenanceMode\Plugin\IsSalablePlugin"/>
+    </type>
+
+    <type name="Magento\Customer\Model\Registration">
+        <plugin name="SoftMaintenanceMode_RegistrationPlugin::after"
+                type="Ipsoftware\SoftMaintenanceMode\Plugin\RegistrationPlugin"/>
+    </type>
+
+    <type name="Magento\Customer\Model\Authentication">
+        <plugin name="authenticate_before" type="Ipsoftware\SoftMaintenanceMode\Plugin\AuthenticatePlugin"/>
+    </type>
+
+</config>
